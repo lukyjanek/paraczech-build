@@ -16,17 +16,11 @@ def tag_decomposition(tag):
         if tag[2] == 'M':
             implicit_result.append('m.anim')
         elif tag[2] == 'I':
-            implicit_result.append('m.inam')
+            implicit_result.append('m.inan')
         elif tag[2] == 'N':
             implicit_result.append('n')
         elif tag[2] == 'F':
             implicit_result.append('f')
-        if tag[3] == 'P':
-            nonimplicit_result.append('pl')
-        elif tag[3] == 'S':
-            nonimplicit_result.append('sg')
-        elif tag[3] == 'D':
-            nonimplicit_result.append('du')
         if tag[4] == '1':
             nonimplicit_result.append('nom')
         elif tag[4] == '2':
@@ -41,6 +35,12 @@ def tag_decomposition(tag):
             nonimplicit_result.append('loc')
         elif tag[4] == '7':
             nonimplicit_result.append('ins')
+        if tag[3] == 'P':
+            nonimplicit_result.append('pl')
+        elif tag[3] == 'S':
+            nonimplicit_result.append('sg')
+        elif tag[3] == 'D':
+            nonimplicit_result.append('du')
 
     elif tag[0] == 'A':
         implicit_result.append('adj')
@@ -53,17 +53,11 @@ def tag_decomposition(tag):
         if tag[2] == 'M':
             nonimplicit_result.append('m.anim')
         elif tag[2] == 'I':
-            nonimplicit_result.append('m.inam')
+            nonimplicit_result.append('m.inan')
         elif tag[2] == 'N':
             nonimplicit_result.append('n')
         elif tag[2] == 'F':
             nonimplicit_result.append('f')
-        if tag[3] == 'P':
-            nonimplicit_result.append('pl')
-        elif tag[3] == 'S':
-            nonimplicit_result.append('sg')
-        elif tag[3] == 'D':
-            nonimplicit_result.append('du')
         if tag[4] == '1':
             nonimplicit_result.append('nom')
         elif tag[4] == '2':
@@ -78,6 +72,12 @@ def tag_decomposition(tag):
             nonimplicit_result.append('loc')
         elif tag[4] == '7':
             nonimplicit_result.append('ins')
+        if tag[3] == 'P':
+            nonimplicit_result.append('pl')
+        elif tag[3] == 'S':
+            nonimplicit_result.append('sg')
+        elif tag[3] == 'D':
+            nonimplicit_result.append('du')
         if tag[5] == 'M':
             implicit_result.append('psor:m')
         elif tag[5] == 'F':
@@ -108,23 +108,23 @@ def tag_decomposition(tag):
         if tag[2] == 'M':
             nonimplicit_result.append('m.anim')
         elif tag[2] == 'I':
-            nonimplicit_result.append('m.inam')
+            nonimplicit_result.append('m.inan')
         elif tag[2] == 'N':
             nonimplicit_result.append('n')
         elif tag[2] == 'F':
             nonimplicit_result.append('f')
-        if tag[3] == 'P':
-            nonimplicit_result.append('pl')
-        elif tag[3] == 'S':
-            nonimplicit_result.append('sg')
-        elif tag[3] == 'D':
-            nonimplicit_result.append('du')
         if tag[7] == '1':
             nonimplicit_result.append('1')
         elif tag[7] == '2':
             nonimplicit_result.append('2')
         elif tag[7] == '3':
             nonimplicit_result.append('3')
+        if tag[3] == 'P':
+            nonimplicit_result.append('pl')
+        elif tag[3] == 'S':
+            nonimplicit_result.append('sg')
+        elif tag[3] == 'D':
+            nonimplicit_result.append('du')
         if tag[8] == 'P':
             nonimplicit_result.append('prs')
         elif tag[8] == 'R':
@@ -158,7 +158,7 @@ def features2ud(my_tags):
             'f':    ('Gender', 'Fem'),
             'n':    ('Gender', 'Neut'),
             'anim': ('Animacy', 'Anim'),
-            'inam': ('Animacy', 'Inan'),
+            'inan': ('Animacy', 'Inan'),
             'sg':   ('Number', 'Sing'),
             'pl':   ('Number', 'Plur'),
             'du':   ('Number', 'Dual'),
@@ -210,7 +210,7 @@ def features2unimorph(my_tags):
         'adj':  'ADJ',
         'verb': 'V',
         'm': 'MASC', 'f': 'FEM', 'n': 'NEUT',
-        'anim': 'ANIM', 'inam': 'INAN',
+        'anim': 'ANIM', 'inan': 'INAN',
         'sg': 'SG', 'pl': 'PL', 'du': 'DU',
         'nom': 'NOM', 'gen': 'GEN', 'dat': 'DAT', 'acc': 'ACC',
         'voc': 'VOC', 'loc': 'LOC', 'ins': 'INS',
@@ -358,7 +358,8 @@ def make_distribution(input_file, output_folder):
     lexemes_header = [
         'lexeme_id', 'label', 'gender', 'deverbative_transgressive',
         'possessor_gender', 'aspect', 'POS', 'name_type_tag',
-        'origin_tag', 'variant_tag', 'register_tag', 'epistemic_tag',
+        # 'origin_tag',
+        'variant_tag', 'register_tag', 'epistemic_tag',
         'original_techlemma', 'frequency',
     ]
 
@@ -384,13 +385,13 @@ def make_distribution(input_file, output_folder):
             lexemes[items[2]] = [
                 items[2],
                 items[2],
-                'f' if 'f' in inherent_features else 'n' if 'n' in inherent_features else 'm.anim' if 'anim' in inherent_features else 'm.inam' if 'inam' in inherent_features else '',
+                'f' if 'f' in inherent_features else 'n' if 'n' in inherent_features else 'm.anim' if 'anim' in inherent_features else 'm.inan' if 'inan' in inherent_features else '',
                 'present' if 'deverb:prstgr' in inherent_features else 'past' if 'deverb:psttgr' in inherent_features else '',
                 'f' if 'psor:f' in inherent_features else 'm' if 'psor:m' in inherent_features else '',
                 'prf' if 'prf' in inherent_features else 'ipfv' if 'ipfv' in inherent_features else 'biasp' if 'biasp' in inherent_features else '',
                 pos_dictionary[inherent_features[0]] if 'poss' not in inherent_features else 'possessiveAdjective',
                 items[8],
-                items[9],
+                # items[9],
                 get_tag_lexeme('variant_tag', items[3]),
                 get_tag_lexeme('register_tag', items[3]),
                 get_tag_lexeme('epistemic_tag', items[3]),
@@ -512,7 +513,7 @@ def make_distribution(input_file, output_folder):
 
     feature_labels = {
         'noun': 'noun', 'adj': 'adjective', 'verb': 'verb', 'm': 'masculine', 'anim': 'animate',
-        'inam': 'inanimate', 'f': 'feminine', 'n': 'neuter', 'pl': 'plural', 'sg': 'singular',
+        'inan': 'inanimate', 'f': 'feminine', 'n': 'neuter', 'pl': 'plural', 'sg': 'singular',
         'du' : 'dual', 'nom': 'nominative', 'gen': 'genitive', 'dat': 'dative', 'acc': 'acusative',
         'voc': 'vocative', 'loc': 'locative', 'ins': 'instrumental', 'poss': 'possessive',
         'psor:m': 'possession to masculine', 'psor:f': 'possession to feminine',
@@ -528,7 +529,7 @@ def make_distribution(input_file, output_folder):
 
     feature_categories = {
         'noun': 'part-of-speech', 'adj': 'part-of-speech', 'verb': 'part-of-speech', 'm': 'gender',
-        'anim': 'animacy', 'inam': 'animacy', 'f': 'gender', 'n': 'gender', 'pl': 'number',
+        'anim': 'animacy', 'inan': 'animacy', 'f': 'gender', 'n': 'gender', 'pl': 'number',
         'sg': 'number', 'du' : 'number', 'nom': 'case', 'gen': 'case', 'dat': 'case', 'acc': 'case',
         'voc': 'case', 'loc': 'case', 'ins': 'case', 'poss': 'possessivity',
         'psor:m': 'possessivity gender', 'psor:f': 'possessivity gender',
@@ -542,7 +543,7 @@ def make_distribution(input_file, output_folder):
 
     feature_pos = {
         'm': 'noun,adjective,verb', 'f': 'noun,adjective,verb', 'n': 'noun,adjective,verb', 
-        'anim': 'noun', 'inam': 'noun', 'pl': 'noun,adjective,verb', 'sg': 'noun,adjective,verb', 
+        'anim': 'noun', 'inan': 'noun', 'pl': 'noun,adjective,verb', 'sg': 'noun,adjective,verb', 
         'du' : 'noun,adjective,verb', 'nom': 'noun,adjective', 'gen': 'noun,adjective',
         'dat': 'noun,adjective', 'acc': 'noun,adjective', 'voc': 'noun,adjective',
         'loc': 'noun,adjective', 'ins': 'noun,adjective', 'poss': 'adjective',
@@ -556,7 +557,7 @@ def make_distribution(input_file, output_folder):
     }
 
     feature_orders = {
-        'noun': '1', 'adj': '2', 'verb': '5', 'm': '1', 'anim': '1', 'inam': '2', 'f': '2', 'n': '3',
+        'noun': '1', 'adj': '2', 'verb': '5', 'm': '1', 'anim': '1', 'inan': '2', 'f': '2', 'n': '3',
         'pl': '2', 'sg': '1', 'du' : '3', 'nom': '1', 'gen': '2', 'dat': '3', 'acc': '4', 'voc': '5',
         'loc': '6', 'ins': '7', 'poss': '', 'psor:m': '1', 'psor:f': '2', 'psor:sg': '1', 'psor:pl': '2',
         'pstg': '1', 'cmpg': '2', 'sprg': '3', 'posp': '1', 'negp': '2', 'inf': '', 'imp': '', '1': '1',
@@ -633,8 +634,8 @@ def make_distribution(input_file, output_folder):
         ['dialect', 'variant_tag', 'dialect'],
         ['slang', 'variant_tag', 'slang, argot'],
         # Proper deverbatives
-        ['proper', 'name_type_tag', 'proper noun, or adjective/verb derived from proper noun'],
-        ['common', 'name_type_tag', 'proper noun, or adjective/verb derived from proper noun'],
+        ['proper', 'name_type_tag', 'proper noun/adjective/verb'],
+        ['common', 'name_type_tag', 'proper noun/adjective/verb'],
         # Origin
         ['borrowed', 'origin_tag', 'word adopted from other languages'],
         ['native', 'origin_tag', 'word belonging to the native lexicon'],

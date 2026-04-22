@@ -110,19 +110,19 @@ def add_native_vs_borrowed_word(input_path, output_path, derinet_path):
                     output_file.write('\t'.join(line) + '\t' + 'NATIVE' + '\n')
 
 
-def add_common_vs_proper_word(input_path, output_path, derinet_path):
-    # loading DeriNet annotation
-    derinet_id2entry = defaultdict()
-    derinet_child2parent = defaultdict()
-    with open(derinet_path, mode='r', encoding='U8') as derinet_file:
-        for line in derinet_file:
-            line = line.strip().split('\t')
-            if len(line) == 1:  # skip empty lines
-                continue
-            additional_information = json.loads(line[-1])
-            derinet_id2entry[line[0]] = additional_information.get('techlemma', line[2])  # store ID and lemma
-            derinet_child2parent[line[0]] = line[6]
-    derinet_entry2id = defaultdict(None, [reversed(i) for i in derinet_id2entry.items()])
+def add_common_vs_proper_word(input_path, output_path, derinet_path):  # derivational relation not taken into account
+    # # loading DeriNet annotation
+    # derinet_id2entry = defaultdict()
+    # derinet_child2parent = defaultdict()
+    # with open(derinet_path, mode='r', encoding='U8') as derinet_file:
+    #     for line in derinet_file:
+    #         line = line.strip().split('\t')
+    #         if len(line) == 1:  # skip empty lines
+    #             continue
+    #         additional_information = json.loads(line[-1])
+    #         derinet_id2entry[line[0]] = additional_information.get('techlemma', line[2])  # store ID and lemma
+    #         derinet_child2parent[line[0]] = line[6]
+    # derinet_entry2id = defaultdict(None, [reversed(i) for i in derinet_id2entry.items()])
     # final resolution
     with open(input_path, mode='r', encoding='U8') as input_file, \
          open(output_path, mode='w', encoding='U8') as output_file:
@@ -133,12 +133,13 @@ def add_common_vs_proper_word(input_path, output_path, derinet_path):
             if heuristics_common_vs_proper == 'PROPER':
                 output_file.write('\t'.join(line) + '\t' + heuristics_common_vs_proper + '\n')
                 continue
-            # DeriNet
-            parent_id = derinet_child2parent.get(derinet_entry2id.get(line[0], None), None)
-            if parent_id is None or parent_id == '':  # lemma is not found in DeriNet
-                output_file.write('\t'.join(line) + '\t' + heuristics_common_vs_proper + '\n')
-                continue
-            while parent_id[-1] != '0':  # traversing to derivational root
-                parent_id = derinet_child2parent[parent_id]
-            derinet_common_vs_proper = 'PROPER' if derinet_id2entry[parent_id][0].isupper() else 'COMMON'
-            output_file.write('\t'.join(line) + '\t' + derinet_common_vs_proper + '\n')
+            output_file.write('\t'.join(line) + '\t' + 'COMMON' + '\n')
+            # # DeriNet
+            # parent_id = derinet_child2parent.get(derinet_entry2id.get(line[0], None), None)
+            # if parent_id is None or parent_id == '':  # lemma is not found in DeriNet
+            #     output_file.write('\t'.join(line) + '\t' + heuristics_common_vs_proper + '\n')
+            #     continue
+            # while parent_id[-1] != '0':  # traversing to derivational root
+            #     parent_id = derinet_child2parent[parent_id]
+            # derinet_common_vs_proper = 'PROPER' if derinet_id2entry[parent_id][0].isupper() else 'COMMON'
+            # output_file.write('\t'.join(line) + '\t' + derinet_common_vs_proper + '\n')
