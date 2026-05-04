@@ -9,7 +9,8 @@ from data_decomposition import merge_and_sort_words
 from data_storage import store_data, make_distribution, \
                          limit_distribution_with_threshold, \
                          limit_distribution_to_lexemes_with_all_cells, \
-                         limit_distribution_to_all_wordforms_of_lexemes_above_threshold
+                         limit_distribution_to_all_wordforms_of_lexemes_above_threshold, \
+                         add_manual_corrections
 from data_analysis import simple_statistics, simple_statistics_above_distributions
 from collections import defaultdict
 from itertools import islice
@@ -32,6 +33,7 @@ parser.add_argument('--make_distribution', type=bool, default=False, required=Fa
 parser.add_argument('--simple_statistics', type=bool, default=False, required=False)
 parser.add_argument('--simple_statistics_above_distributions', type=bool, default=False, required=False)
 parser.add_argument('--limit_distribution_to_all_wordforms_of_lexemes_above_threshold', type=bool, default=False, required=False)
+parser.add_argument('--add_manual_corrections', type=bool, default=False, required=False)
 
 args = parser.parse_args()
 
@@ -153,6 +155,13 @@ def main():
     if args.full_pipeline or args.make_distribution:
         make_distribution(
             input_file = 'final-paraczech-package/all-in-one-1_0.csv',
+            output_folder = 'final-paraczech-package/paraczech/'
+        )
+
+    ## add manual corrections
+    if args.add_manual_corrections:
+        add_manual_corrections(
+            input_folder = 'manual-corrections/',
             output_folder = 'final-paraczech-package/paraczech/'
         )
 

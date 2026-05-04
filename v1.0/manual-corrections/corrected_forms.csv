@@ -1,0 +1,224 @@
+form_id,lexeme,cell,phon_form,candidate_phon_form,orth_form,overabundance_tag,UCNK,frequency,frequency_per_million
+f3668142,patch,nom.pl,#MISSING#,p ɛ t͡ʃ ɛ,patche,,NNIP1-----A----,26,0.0055096323
+f3668143,patch,gen.pl,#MISSING#,p ɛ t͡ʃ uː,patchů,,NNIP2-----A----,52,0.0110192647
+f3668144,patch,dat.pl,#MISSING#,p ɛ t͡ʃ u m,patchum,informal,NNIP3-----A---6,1,0.0002119089
+f3668145,patch,acc.pl,#MISSING#,p ɛ t͡ʃ ɛ,patche,,NNIP4-----A----,35,0.0074168128
+f3668146,patch,voc.pl,#MISSING#,p ɛ t͡ʃ ɛ,patche,,NNIP5-----A----,0,0
+f3668147,patch,loc.pl,#MISSING#,p ɛ t͡ʃ iː x,patchích,,NNIP6-----A----,1,0.0002119089
+f3668148,patch,ins.pl,#MISSING#,p ɛ t͡ʃ ɪ,patchi,,NNIP7-----A----,9,0.0019071804
+f3668149,patch,nom.sg,#MISSING#,p ɛ t͡ʃ,patch,,NNIS1-----A----,528,0.1118879182
+f3668150,patch,gen.sg,#MISSING#,p ɛ t͡ʃ ɛ,patche,,NNIS2-----A----,36,0.0076287217
+f3668151,patch,dat.sg,#MISSING#,p ɛ t͡ʃ ɪ,patchi,,NNIS3-----A----,1,0.0002119089
+f3668152,patch,acc.sg,#MISSING#,p ɛ t͡ʃ,patch,,NNIS4-----A----,156,0.033057794
+f3668153,patch,voc.sg,#MISSING#,p ɛ t͡ʃ ɪ,patchi,,NNIS5-----A----,0,0
+f3668154,patch,loc.sg,#MISSING#,p ɛ t͡ʃ ɪ,patchi,,NNIS6-----A----,16,0.003390543
+f3668155,patch,ins.sg,#MISSING#,p ɛ t͡ʃ ɛ m,patchem,,NNIS7-----A----,19,0.0040262698
+f3668156,patchwork,nom.pl,#MISSING#,p ɛ t͡ʃ v ɔ r k ɪ,patchworky,,NNIP1-----A----,12,0.0025429072
+f3668157,patchwork,gen.pl,#MISSING#,p ɛ t͡ʃ v ɔ r k uː,patchworků,,NNIP2-----A----,23,0.0048739055
+f3668158,patchwork,dat.pl,#MISSING#,p ɛ t͡ʃ v ɔ r k uː m,patchworkům,,NNIP3-----A----,2,0.0004238179
+f3668159,patchwork,acc.pl,#MISSING#,p ɛ t͡ʃ v ɔ r k ɪ,patchworky,,NNIP4-----A----,20,0.0042381787
+f3668160,patchwork,voc.pl,#MISSING#,p ɛ t͡ʃ v ɔ r k ɪ,patchworky,,NNIP5-----A----,0,0
+f3668161,patchwork,ins.pl,#MISSING#,p ɛ t͡ʃ v ɔ r k ɪ,patchworky,,NNIP7-----A----,2,0.0004238179
+f3668162,patchwork,nom.sg,#MISSING#,p ɛ t͡ʃ v ɔ r k,patchwork,,NNIS1-----A----,2064,0.4373800437
+f3668163,patchwork,gen.sg,#MISSING#,p ɛ t͡ʃ v ɔ r k u,patchworku,,NNIS2-----A----,1270,0.2691243486
+f3668164,patchwork,dat.sg,#MISSING#,p ɛ t͡ʃ v ɔ r k u,patchworku,,NNIS3-----A----,119,0.0252171634
+f3668165,patchwork,acc.sg,#MISSING#,p ɛ t͡ʃ v ɔ r k,patchwork,,NNIS4-----A----,868,0.1839369564
+f3668166,patchwork,voc.sg,#MISSING#,p ɛ t͡ʃ v ɔ r k u,patchworku,,NNIS5-----A----,0,0
+f3668167,patchwork,loc.sg,#MISSING#,p ɛ t͡ʃ v ɔ r k u,patchworku,,NNIS6-----A----,78,0.016528897
+f3668168,patchwork,ins.sg,#MISSING#,p ɛ t͡ʃ v ɔ r k ɛ m,patchworkem,,NNIS7-----A----,148,0.0313625225
+f3668169,patchworkový,f.nom.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v ɛː,patchworkové,,AAFP1----1A----,69,0.0146217166
+f3668170,patchworkový,f.nom.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː,patchworkový,informal,AAFP1----1A---6,0,0
+f3668171,patchworkový,f.nom.pl.pstg.negp,#MISSING#,n ɛ p ɛ t͡ʃ v ɔ r k ɔ v ɛː,nepatchworkové,,AAFP1----1N----,1,0.0002119089
+f3668172,patchworkový,f.gen.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː x,patchworkových,,AAFP2----1A----,76,0.0161050791
+f3668173,patchworkový,f.dat.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː m,patchworkovým,,AAFP3----1A----,6,0.0012714536
+f3668174,patchworkový,f.acc.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v ɛː,patchworkové,,AAFP4----1A----,63,0.013350263
+f3668175,patchworkový,f.acc.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː,patchworkový,informal,AAFP4----1A---6,0,0
+f3668176,patchworkový,f.acc.pl.pstg.negp,#MISSING#,n ɛ p ɛ t͡ʃ v ɔ r k ɔ v ɛː,nepatchworkové,,AAFP4----1N----,0,0
+f3668177,patchworkový,f.voc.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v ɛː,patchworkové,,AAFP5----1A----,0,0
+f3668178,patchworkový,f.voc.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː,patchworkový,informal,AAFP5----1A---6,0,0
+f3668179,patchworkový,f.voc.pl.pstg.negp,#MISSING#,n ɛ p ɛ t͡ʃ v ɔ r k ɔ v ɛː,nepatchworkové,,AAFP5----1N----,0,0
+f3668180,patchworkový,f.loc.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː x,patchworkových,,AAFP6----1A----,12,0.0025429072
+f3668181,patchworkový,f.ins.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː m ɪ,patchworkovými,,AAFP7----1A----,5,0.0010595447
+f3668182,patchworkový,f.nom.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v aː,patchworková,,AAFS1----1A----,133,0.0281838885
+f3668183,patchworkový,f.gen.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v ɛː,patchworkové,,AAFS2----1A----,53,0.0112311736
+f3668184,patchworkový,f.gen.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː,patchworkový,informal,AAFS2----1A---6,0,0
+f3668185,patchworkový,f.gen.sg.pstg.negp,#MISSING#,n ɛ p ɛ t͡ʃ v ɔ r k ɔ v ɛː,nepatchworkové,,AAFS2----1N----,0,0
+f3668186,patchworkový,f.dat.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v ɛː,patchworkové,,AAFS3----1A----,4,0.0008476357
+f3668187,patchworkový,f.dat.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː,patchworkový,informal,AAFS3----1A---6,0,0
+f3668188,patchworkový,f.dat.sg.pstg.negp,#MISSING#,n ɛ p ɛ t͡ʃ v ɔ r k ɔ v ɛː,nepatchworkové,,AAFS3----1N----,0,0
+f3668189,patchworkový,f.acc.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v ɔu̯,patchworkovou,,AAFS4----1A----,75,0.0158931702
+f3668190,patchworkový,f.voc.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v aː,patchworková,,AAFS5----1A----,0,0
+f3668191,patchworkový,f.loc.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v ɛː,patchworkové,,AAFS6----1A----,18,0.0038143608
+f3668192,patchworkový,f.loc.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː,patchworkový,informal,AAFS6----1A---6,0,0
+f3668193,patchworkový,f.loc.sg.pstg.negp,#MISSING#,n ɛ p ɛ t͡ʃ v ɔ r k ɔ v ɛː,nepatchworkové,,AAFS6----1N----,0,0
+f3668194,patchworkový,f.ins.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v ɔu̯,patchworkovou,,AAFS7----1A----,40,0.0084763574
+f3668195,patchworkový,m.inan.nom.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v ɛː,patchworkové,,AAIP1----1A----,72,0.0152574434
+f3668196,patchworkový,m.inan.nom.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː,patchworkový,informal,AAIP1----1A---6,0,0
+f3668197,patchworkový,m.inan.nom.pl.pstg.negp,#MISSING#,n ɛ p ɛ t͡ʃ v ɔ r k ɔ v ɛː,nepatchworkové,,AAIP1----1N----,0,0
+f3668198,patchworkový,m.inan.gen.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː x,patchworkových,,AAIP2----1A----,42,0.0089001753
+f3668199,patchworkový,m.inan.dat.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː m,patchworkovým,,AAIP3----1A----,1,0.0002119089
+f3668200,patchworkový,m.inan.acc.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v ɛː,patchworkové,,AAIP4----1A----,57,0.0120788093
+f3668201,patchworkový,m.inan.acc.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː,patchworkový,informal,AAIP4----1A---6,0,0
+f3668202,patchworkový,m.inan.acc.pl.pstg.negp,#MISSING#,n ɛ p ɛ t͡ʃ v ɔ r k ɔ v ɛː,nepatchworkové,,AAIP4----1N----,0,0
+f3668203,patchworkový,m.inan.voc.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v ɛː,patchworkové,,AAIP5----1A----,0,0
+f3668204,patchworkový,m.inan.voc.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː,patchworkový,informal,AAIP5----1A---6,0,0
+f3668205,patchworkový,m.inan.voc.pl.pstg.negp,#MISSING#,n ɛ p ɛ t͡ʃ v ɔ r k ɔ v ɛː,nepatchworkové,,AAIP5----1N----,0,0
+f3668206,patchworkový,m.inan.loc.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː x,patchworkových,,AAIP6----1A----,4,0.0008476357
+f3668207,patchworkový,m.inan.ins.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː m ɪ,patchworkovými,,AAIP7----1A----,9,0.0019071804
+f3668208,patchworkový,m.inan.nom.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː,patchworkový,,AAIS1----1A----,126,0.0267005259
+f3668209,patchworkový,m.inan.gen.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v ɛː ɦ ɔ,patchworkového,,AAIS2----1A----,117,0.0247933455
+f3668210,patchworkový,m.inan.dat.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v ɛː m u,patchworkovému,,AAIS3----1A----,1,0.0002119089
+f3668211,patchworkový,m.inan.acc.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː,patchworkový,,AAIS4----1A----,70,0.0148336255
+f3668212,patchworkový,m.inan.voc.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː,patchworkový,,AAIS5----1A----,0,0
+f3668213,patchworkový,m.inan.loc.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v ɛː m,patchworkovém,,AAIS6----1A----,19,0.0040262698
+f3668214,patchworkový,m.inan.loc.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː m,patchworkovým,informal,AAIS6----1A---7,0,0
+f3668215,patchworkový,m.inan.ins.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː m,patchworkovým,,AAIS7----1A----,30,0.0063572681
+f3668216,patchworkový,m.anim.nom.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː,patchworkoví,,AAMP1----1A----,2,0.0004238179
+f3668217,patchworkový,m.anim.nom.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː,patchworkový,informal,AAMP1----1A---6,0,0
+f3668218,patchworkový,m.anim.gen.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː x,patchworkových,,AAMP2----1A----,0,0
+f3668219,patchworkový,m.anim.dat.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː m,patchworkovým,,AAMP3----1A----,0,0
+f3668220,patchworkový,m.anim.acc.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v ɛː,patchworkové,,AAMP4----1A----,0,0
+f3668221,patchworkový,m.anim.acc.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː,patchworkový,informal,AAMP4----1A---6,0,0
+f3668222,patchworkový,m.anim.acc.pl.pstg.negp,#MISSING#,n ɛ p ɛ t͡ʃ v ɔ r k ɔ v ɛː,nepatchworkové,,AAMP4----1N----,0,0
+f3668223,patchworkový,m.anim.voc.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː,patchworkoví,,AAMP5----1A----,0,0
+f3668224,patchworkový,m.anim.voc.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː,patchworkový,informal,AAMP5----1A---6,0,0
+f3668225,patchworkový,m.anim.loc.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː x,patchworkových,,AAMP6----1A----,0,0
+f3668226,patchworkový,m.anim.ins.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː m ɪ,patchworkovými,,AAMP7----1A----,0,0
+f3668227,patchworkový,m.anim.nom.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː,patchworkový,,AAMS1----1A----,1,0.0002119089
+f3668228,patchworkový,m.anim.gen.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v ɛː ɦ ɔ,patchworkového,,AAMS2----1A----,1,0.0002119089
+f3668229,patchworkový,m.anim.dat.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v ɛː m u,patchworkovému,,AAMS3----1A----,0,0
+f3668230,patchworkový,m.anim.acc.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v ɛː ɦ ɔ,patchworkového,,AAMS4----1A----,0,0
+f3668231,patchworkový,m.anim.voc.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː,patchworkový,,AAMS5----1A----,0,0
+f3668232,patchworkový,m.anim.loc.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v ɛː m,patchworkovém,,AAMS6----1A----,0,0
+f3668233,patchworkový,m.anim.loc.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː m,patchworkovým,informal,AAMS6----1A---7,0,0
+f3668234,patchworkový,m.anim.ins.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː m,patchworkovým,,AAMS7----1A----,0,0
+f3668235,patchworkový,n.nom.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v aː,patchworková,,AANP1----1A----,12,0.0025429072
+f3668236,patchworkový,n.nom.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v ɛː,patchworkové,informal,AANP1----1A---6,0,0
+f3668237,patchworkový,n.nom.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː,patchworkový,informal,AANP1----1A---7,0,0
+f3668238,patchworkový,n.nom.pl.pstg.negp,#MISSING#,n ɛ p ɛ t͡ʃ v ɔ r k ɔ v ɛː,nepatchworkové,informal,AANP1----1N---6,0,0
+f3668239,patchworkový,n.gen.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː x,patchworkových,,AANP2----1A----,7,0.0014833626
+f3668240,patchworkový,n.dat.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː m,patchworkovým,,AANP3----1A----,0,0
+f3668241,patchworkový,n.acc.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v aː,patchworková,,AANP4----1A----,10,0.0021190894
+f3668242,patchworkový,n.acc.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v ɛː,patchworkové,informal,AANP4----1A---6,0,0
+f3668243,patchworkový,n.acc.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː,patchworkový,informal,AANP4----1A---7,0,0
+f3668244,patchworkový,n.acc.pl.pstg.negp,#MISSING#,n ɛ p ɛ t͡ʃ v ɔ r k ɔ v ɛː,nepatchworkové,informal,AANP4----1N---6,0,0
+f3668245,patchworkový,n.voc.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v aː,patchworková,,AANP5----1A----,0,0
+f3668246,patchworkový,n.voc.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v ɛː,patchworkové,informal,AANP5----1A---6,0,0
+f3668247,patchworkový,n.voc.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː,patchworkový,informal,AANP5----1A---7,0,0
+f3668248,patchworkový,n.voc.pl.pstg.negp,#MISSING#,n ɛ p ɛ t͡ʃ v ɔ r k ɔ v ɛː,nepatchworkové,informal,AANP5----1N---6,0,0
+f3668249,patchworkový,n.loc.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː x,patchworkových,,AANP6----1A----,0,0
+f3668250,patchworkový,n.ins.pl.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː m ɪ,patchworkovými,,AANP7----1A----,2,0.0004238179
+f3668251,patchworkový,n.nom.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v ɛː,patchworkové,,AANS1----1A----,27,0.0057215413
+f3668252,patchworkový,n.nom.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː,patchworkový,informal,AANS1----1A---6,0,0
+f3668253,patchworkový,n.nom.sg.pstg.negp,#MISSING#,n ɛ p ɛ t͡ʃ v ɔ r k ɔ v ɛː,nepatchworkové,,AANS1----1N----,0,0
+f3668254,patchworkový,n.gen.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v ɛː ɦ ɔ,patchworkového,,AANS2----1A----,4,0.0008476357
+f3668255,patchworkový,n.dat.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v ɛː m u,patchworkovému,,AANS3----1A----,1,0.0002119089
+f3668256,patchworkový,n.acc.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v ɛː,patchworkové,,AANS4----1A----,15,0.003178634
+f3668257,patchworkový,n.acc.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː,patchworkový,informal,AANS4----1A---6,0,0
+f3668258,patchworkový,n.acc.sg.pstg.negp,#MISSING#,n ɛ p ɛ t͡ʃ v ɔ r k ɔ v ɛː,nepatchworkové,,AANS4----1N----,0,0
+f3668259,patchworkový,n.voc.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v ɛː,patchworkové,,AANS5----1A----,0,0
+f3668260,patchworkový,n.voc.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː,patchworkový,informal,AANS5----1A---6,0,0
+f3668261,patchworkový,n.voc.sg.pstg.negp,#MISSING#,n ɛ p ɛ t͡ʃ v ɔ r k ɔ v ɛː,nepatchworkové,,AANS5----1N----,0,0
+f3668262,patchworkový,n.loc.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v ɛː m,patchworkovém,,AANS6----1A----,6,0.0012714536
+f3668263,patchworkový,n.loc.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː m,patchworkovým,informal,AANS6----1A---7,0,0
+f3668264,patchworkový,n.ins.sg.pstg.posp,#MISSING#,p ɛ t͡ʃ v ɔ r k ɔ v iː m,patchworkovým,,AANS7----1A----,6,0.0012714536
+f232058,batchový,m.inan.loc.sg.pstg.posp,#MISSING#,b ɛ t͡ʃ ɔ v ɛː m,batchovém,,AAIS6----1A----,1,0.0002119089
+f232059,batchový,m.anim.loc.sg.pstg.posp,#MISSING#,b ɛ t͡ʃ ɔ v ɛː m,batchovém,,AAMS6----1A----,0,0
+f232060,batchový,n.loc.sg.pstg.posp,#MISSING#,b ɛ t͡ʃ ɔ v ɛː m,batchovém,,AANS6----1A----,0,0
+f392512,bordeaux,acc.sg,#MISSING#,b ɔ r d ɔː,bordeaux,,NNNS4-----A----,94,0.01991944
+f392513,bordeaux,gen.pl,#MISSING#,b ɔ r d ɔː,bordeaux,,NNFP2-----A----,155,0.0328458851
+f392514,bordeaux,nom.sg,#MISSING#,b ɔ r d ɔː,bordeaux,,NNNS1-----A----,114,0.0241576187
+f392515,bordeaux,acc.sg,#MISSING#,b ɔ r d ɔː,bordeaux,,NNFS4-----A----,39,0.0082644485
+f392516,bordeaux,ins.sg,#MISSING#,b ɔ r d ɔː,bordeaux,,NNNS7-----A----,12,0.0025429072
+f392517,bordeaux,gen.sg,#MISSING#,b ɔ r d ɔː,bordeaux,,NNNS2-----A----,15,0.003178634
+f392518,bordeaux,nom.sg,#MISSING#,b ɔ r d ɔː,bordeaux,,NNFS1-----A----,46,0.0097478111
+f392519,bordeaux,dat.pl,#MISSING#,b ɔ r d ɔː,bordeaux,,NNFP3-----A----,2,0.0004238179
+f392520,bordeaux,gen.pl,#MISSING#,b ɔ r d ɔː,bordeaux,,NNNP2-----A----,4,0.0008476357
+f392521,bordeaux,nom.pl,#MISSING#,b ɔ r d ɔː,bordeaux,,NNFP1-----A----,3,0.0006357268
+f392522,bordeaux,ins.sg,#MISSING#,b ɔ r d ɔː,bordeaux,,NNFS7-----A----,3,0.0006357268
+f392523,bordeaux,loc.pl,#MISSING#,b ɔ r d ɔː,bordeaux,,NNFP6-----A----,1,0.0002119089
+f392524,bordeaux,dat.sg,#MISSING#,b ɔ r d ɔː,bordeaux,,NNNS3-----A----,2,0.0004238179
+f392525,bordeaux,ins.pl,#MISSING#,b ɔ r d ɔː,bordeaux,,NNFP7-----A----,2,0.0004238179
+f392526,bordeaux,dat.sg,#MISSING#,b ɔ r d ɔː,bordeaux,,NNFS3-----A----,2,0.0004238179
+f392527,bordeaux,acc.pl,#MISSING#,b ɔ r d ɔː,bordeaux,,NNNP4-----A----,1,0.0002119089
+f392528,bordeaux,loc.sg,#MISSING#,b ɔ r d ɔː,bordeaux,,NNNS6-----A----,3,0.0006357268
+f392529,bordeauxský,f.nom.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k ɛː,bordeauxské,,AAFP1----1A----,19,0.0040262698
+f392530,bordeauxský,f.nom.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː,bordeauxský,informal,AAFP1----1A---6,0,0
+f392531,bordeauxský,f.gen.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː x,bordeauxských,,AAFP2----1A----,23,0.0048739055
+f392532,bordeauxský,f.dat.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː m,bordeauxským,,AAFP3----1A----,6,0.0012714536
+f392533,bordeauxský,f.acc.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k ɛː,bordeauxské,,AAFP4----1A----,17,0.0036024519
+f392534,bordeauxský,f.acc.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː,bordeauxský,informal,AAFP4----1A---6,0,0
+f392535,bordeauxský,f.voc.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k ɛː,bordeauxské,,AAFP5----1A----,0,0
+f392536,bordeauxský,f.voc.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː,bordeauxský,informal,AAFP5----1A---6,0,0
+f392537,bordeauxský,f.loc.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː x,bordeauxských,,AAFP6----1A----,2,0.0004238179
+f392538,bordeauxský,f.ins.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː m ɪ,bordeauxskými,,AAFP7----1A----,0,0
+f392539,bordeauxský,f.nom.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k aː,bordeauxská,,AAFS1----1A----,78,0.016528897
+f392540,bordeauxský,f.gen.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k ɛː,bordeauxské,,AAFS2----1A----,51,0.0108073557
+f392541,bordeauxský,f.gen.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː,bordeauxský,informal,AAFS2----1A---6,0,0
+f392542,bordeauxský,f.dat.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k ɛː,bordeauxské,,AAFS3----1A----,3,0.0006357268
+f392543,bordeauxský,f.dat.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː,bordeauxský,informal,AAFS3----1A---6,0,0
+f392544,bordeauxský,f.acc.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k ɔu̯,bordeauxskou,,AAFS4----1A----,25,0.0052977234
+f392545,bordeauxský,f.voc.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k aː,bordeauxská,,AAFS5----1A----,0,0
+f392546,bordeauxský,f.loc.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k ɛː,bordeauxské,,AAFS6----1A----,13,0.0027548162
+f392547,bordeauxský,f.loc.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː,bordeauxský,informal,AAFS6----1A---6,0,0
+f392548,bordeauxský,f.ins.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k ɔu̯,bordeauxskou,,AAFS7----1A----,11,0.0023309983
+f392549,bordeauxský,m.inan.nom.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k ɛː,bordeauxské,,AAIP1----1A----,0,0
+f392550,bordeauxský,m.inan.nom.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː,bordeauxský,informal,AAIP1----1A---6,0,0
+f392551,bordeauxský,m.inan.gen.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː x,bordeauxských,,AAIP2----1A----,3,0.0006357268
+f392552,bordeauxský,m.inan.dat.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː m,bordeauxským,,AAIP3----1A----,0,0
+f392553,bordeauxský,m.inan.acc.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k ɛː,bordeauxské,,AAIP4----1A----,0,0
+f392554,bordeauxský,m.inan.acc.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː,bordeauxský,informal,AAIP4----1A---6,0,0
+f392555,bordeauxský,m.inan.voc.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k ɛː,bordeauxské,,AAIP5----1A----,0,0
+f392556,bordeauxský,m.inan.voc.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː,bordeauxský,informal,AAIP5----1A---6,0,0
+f392557,bordeauxský,m.inan.loc.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː x,bordeauxských,,AAIP6----1A----,1,0.0002119089
+f392558,bordeauxský,m.inan.ins.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː m ɪ,bordeauxskými,,AAIP7----1A----,0,0
+f392559,bordeauxský,m.inan.nom.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː,bordeauxský,,AAIS1----1A----,4,0.0008476357
+f392560,bordeauxský,m.inan.gen.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k ɛː ɦ ɔ,bordeauxského,,AAIS2----1A----,13,0.0027548162
+f392561,bordeauxský,m.inan.dat.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k ɛː m u,bordeauxskému,,AAIS3----1A----,1,0.0002119089
+f392562,bordeauxský,m.inan.acc.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː,bordeauxský,,AAIS4----1A----,3,0.0006357268
+f392563,bordeauxský,m.inan.voc.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː,bordeauxský,,AAIS5----1A----,0,0
+f392564,bordeauxský,m.inan.loc.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k ɛː m,bordeauxském,,AAIS6----1A----,4,0.0008476357
+f392565,bordeauxský,m.inan.loc.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː m,bordeauxským,informal,AAIS6----1A---7,0,0
+f392566,bordeauxský,m.inan.ins.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː m,bordeauxským,,AAIS7----1A----,1,0.0002119089
+f392567,bordeauxský,m.anim.nom.pl.pstg.posp,#MISSING#,b ɔ r d ɔː ʃ c iː,bordeauxští,,AAMP1----1A----,3,0.0006357268
+f392568,bordeauxský,m.anim.nom.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː,bordeauxský,informal,AAMP1----1A---6,0,0
+f392569,bordeauxský,m.anim.gen.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː x,bordeauxských,,AAMP2----1A----,2,0.0004238179
+f392570,bordeauxský,m.anim.dat.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː m,bordeauxským,,AAMP3----1A----,0,0
+f392571,bordeauxský,m.anim.acc.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k ɛː,bordeauxské,,AAMP4----1A----,0,0
+f392572,bordeauxský,m.anim.acc.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː,bordeauxský,informal,AAMP4----1A---6,0,0
+f392573,bordeauxský,m.anim.voc.pl.pstg.posp,#MISSING#,b ɔ r d ɔː ʃ c iː,bordeauxští,,AAMP5----1A----,0,0
+f392574,bordeauxský,m.anim.voc.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː,bordeauxský,informal,AAMP5----1A---6,0,0
+f392575,bordeauxský,m.anim.loc.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː x,bordeauxských,,AAMP6----1A----,0,0
+f392576,bordeauxský,m.anim.ins.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː m ɪ,bordeauxskými,,AAMP7----1A----,1,0.0002119089
+f392577,bordeauxský,m.anim.nom.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː,bordeauxský,,AAMS1----1A----,8,0.0016952715
+f392578,bordeauxský,m.anim.gen.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k ɛː ɦ ɔ,bordeauxského,,AAMS2----1A----,5,0.0010595447
+f392579,bordeauxský,m.anim.dat.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k ɛː m u,bordeauxskému,,AAMS3----1A----,0,0
+f392580,bordeauxský,m.anim.acc.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k ɛː ɦ ɔ,bordeauxského,,AAMS4----1A----,0,0
+f392581,bordeauxský,m.anim.voc.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː,bordeauxský,,AAMS5----1A----,0,0
+f392582,bordeauxský,m.anim.loc.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k ɛː m,bordeauxském,,AAMS6----1A----,0,0
+f392583,bordeauxský,m.anim.loc.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː m,bordeauxským,informal,AAMS6----1A---7,0,0
+f392584,bordeauxský,m.anim.ins.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː m,bordeauxským,,AAMS7----1A----,1,0.0002119089
+f392585,bordeauxský,n.nom.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k aː,bordeauxská,,AANP1----1A----,14,0.0029667251
+f392586,bordeauxský,n.nom.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k ɛː,bordeauxské,informal,AANP1----1A---6,0,0
+f392587,bordeauxský,n.nom.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː,bordeauxský,informal,AANP1----1A---7,0,0
+f392588,bordeauxský,n.gen.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː x,bordeauxských,,AANP2----1A----,26,0.0055096323
+f392589,bordeauxský,n.dat.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː m,bordeauxským,,AANP3----1A----,1,0.0002119089
+f392590,bordeauxský,n.acc.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k aː,bordeauxská,,AANP4----1A----,12,0.0025429072
+f392591,bordeauxský,n.acc.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k ɛː,bordeauxské,informal,AANP4----1A---6,0,0
+f392592,bordeauxský,n.acc.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː,bordeauxský,informal,AANP4----1A---7,0,0
+f392593,bordeauxský,n.voc.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k aː,bordeauxská,,AANP5----1A----,0,0
+f392594,bordeauxský,n.voc.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k ɛː,bordeauxské,informal,AANP5----1A---6,0,0
+f392595,bordeauxský,n.voc.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː,bordeauxský,informal,AANP5----1A---7,0,0
+f392596,bordeauxský,n.loc.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː x,bordeauxských,,AANP6----1A----,1,0.0002119089
+f392597,bordeauxský,n.ins.pl.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː m ɪ,bordeauxskými,,AANP7----1A----,1,0.0002119089
+f392598,bordeauxský,n.nom.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k ɛː,bordeauxské,,AANS1----1A----,7,0.0014833626
+f392599,bordeauxský,n.nom.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː,bordeauxský,informal,AANS1----1A---6,0,0
+f392600,bordeauxský,n.gen.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k ɛː ɦ ɔ,bordeauxského,,AANS2----1A----,25,0.0052977234
+f392601,bordeauxský,n.dat.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k ɛː m u,bordeauxskému,,AANS3----1A----,2,0.0004238179
+f392602,bordeauxský,n.acc.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k ɛː,bordeauxské,,AANS4----1A----,11,0.0023309983
+f392603,bordeauxský,n.acc.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː,bordeauxský,informal,AANS4----1A---6,0,0
+f392604,bordeauxský,n.voc.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k ɛː,bordeauxské,,AANS5----1A----,0,0
+f392605,bordeauxský,n.voc.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː,bordeauxský,informal,AANS5----1A---6,0,0
+f392606,bordeauxský,n.loc.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k ɛː m,bordeauxském,,AANS6----1A----,0,0
+f392607,bordeauxský,n.loc.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː m,bordeauxským,informal,AANS6----1A---7,0,0
+f392608,bordeauxský,n.ins.sg.pstg.posp,#MISSING#,b ɔ r d ɔː s k iː m,bordeauxským,,AANS7----1A----,2,0.0004238179

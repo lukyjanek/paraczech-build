@@ -3,6 +3,7 @@
 
 import os
 import csv
+import pandas as pd
 from collections import defaultdict
 
 
@@ -712,3 +713,16 @@ def limit_distribution_to_all_wordforms_of_lexemes_above_threshold(input_file, o
             if lexemes_frequencies[line[1]] < threshold:
                 continue
             csvwriter.writerow(line)
+
+
+def add_manual_corrections(input_folder, output_folder):
+    for corrected_file in os.listdir(input_folder):
+        for paraczech_file in os.listdir(output_folder):
+            if corrected_file.split('_')[1] in paraczech_file.split('_')[1]:
+                paraczech = pd.read_csv(f'{output_folder}/{paraczech_file}')
+                corrections = pd.read_csv(f'{input_folder}/{corrected_file}')
+                paraczech.set_index(paraczech.columns[0], inplace=True)
+                corrections.set_index(corrections.columns[0], inplace=True)
+                paraczech.update(corrections)
+                paraczech.reset_index(inplace=True)
+                paraczech.to_csv(f'{output_folder}/{paraczech_file}', index=False)
