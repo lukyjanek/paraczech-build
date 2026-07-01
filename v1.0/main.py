@@ -10,7 +10,8 @@ from data_storage import store_data, make_distribution, \
                          limit_distribution_with_threshold, \
                          limit_distribution_to_lexemes_with_all_cells, \
                          limit_distribution_to_all_wordforms_of_lexemes_above_threshold, \
-                         add_manual_corrections
+                         add_manual_corrections, add_exponents, add_inflectional_classes, \
+                         delete_name_type_tag, sort_tables
 from data_analysis import simple_statistics, simple_statistics_above_distributions
 from collections import defaultdict
 from itertools import islice
@@ -34,7 +35,8 @@ parser.add_argument('--simple_statistics', type=bool, default=False, required=Fa
 parser.add_argument('--simple_statistics_above_distributions', type=bool, default=False, required=False)
 parser.add_argument('--limit_distribution_to_all_wordforms_of_lexemes_above_threshold', type=bool, default=False, required=False)
 parser.add_argument('--add_manual_corrections', type=bool, default=False, required=False)
-
+parser.add_argument('--add_exponents', type=bool, default=False, required=False)
+parser.add_argument('--add_inflectional_classes', type=bool, default=False, required=False)
 args = parser.parse_args()
 
 
@@ -165,6 +167,34 @@ def main():
             output_folder = 'final-paraczech-package/paraczech/'
         )
 
+    ## add exponents
+    if args.add_exponents:
+        add_exponents(
+            input_folder = 'final-paraczech-package/paraczech/',
+            output_folder = 'final-paraczech-package/paraczech/',
+            exponents_file = 'input-resources/exponents.csv'
+        )
+
+    ## add inflectional classes
+    if args.add_inflectional_classes:
+        add_inflectional_classes(
+            input_folder = 'final-paraczech-package/paraczech/',
+            output_folder = 'final-paraczech-package/paraczech/'
+        )
+
+    ## delete name_type_tag
+    if args.delete_name_type_tag:
+        delete_name_type_tag(
+            input_folder = 'final-paraczech-package/paraczech/',
+            output_folder = 'final-paraczech-package/paraczech/'
+        )
+    
+    ## sort individual tables logically
+    if args.sort_tables:
+        sort_tables(
+            input_folder = 'final-paraczech-package/paraczech/',
+            output_folder = 'final-paraczech-package/paraczech/'
+        )
 
 
     # STATISTICS

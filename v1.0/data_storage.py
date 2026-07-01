@@ -2,9 +2,18 @@
 # coding: utf-8
 
 import os
+import re
 import csv
+import numpy as np
 import pandas as pd
 from collections import defaultdict
+
+from classify_nouns import give_noun_class
+from classify_adjectives import give_adjective_class
+from classify_verbs import give_verb_class
+
+from tqdm import tqdm
+tqdm.pandas()
 
 
 def tag_decomposition(tag):
@@ -726,3 +735,127 @@ def add_manual_corrections(input_folder, output_folder):
                 paraczech.update(corrections)
                 paraczech.reset_index(inplace=True)
                 paraczech.to_csv(f'{output_folder}/{paraczech_file}', index=False)
+
+
+def add_exponents(input_folder, exponents_file, output_folder):
+    forms = pd.read_csv(f'{input_folder}/paraczech_forms.csv')
+    lexis = pd.read_csv(f'{input_folder}/paraczech_lexemes.csv')
+    exponents = pd.read_csv(f'{exponents_file}')
+    # transform rules for exponents to regular expressions
+    rules_dict = exponents.groupby('cell').apply(
+        lambda df: list(zip(df['regex'], df['exponent']))
+    ).to_dict()
+    # delete irrelevant features from the cell description
+    def clear_cell(cell):
+        features = ['pstg', 'cmpg', 'sprg', 'posp', 'negp']
+        for feature in features:
+            cell = cell.replace('.' + feature, '')
+        return cell
+    # find indeclinable; based on nominative and instrumental in singular
+    def indeclinable(group):
+        safe_pairs = [
+            ('nom.sg', 'ins.sg'),                 # nouns
+            ('n.nom.pl', 'n.gen.pl'),             # adjectives
+            ('f.nom.pl', 'f.gen.pl'),             # adjectives
+            ('m.inan.nom.pl', 'm.inan.gen.pl'),   # adjectives
+            ('m.anim.nom.pl', 'm.anim.gen.pl')    # adjectives
+        ]
+        g = group.copy()
+        for fst_tag, scn_tag in safe_pairs:
+            fst = set(g.loc[g['clean_cell'] == fst_tag, 'orth_form'])
+            scn = set(g.loc[g['clean_cell'] == scn_tag, 'orth_form'])
+            if fst and scn:
+                if fst == scn: return True
+        return False
+    forms['clean_cell'] = forms['cell'].apply(clear_cell)
+    indeclinable_forms = forms.groupby('lexeme').filter(indeclinable)
+    forms['indeclinable'] = forms['form_id'].isin(indeclinable_forms['form_id'])
+    del forms['clean_cell']
+    # find exponents
+    def extract_and_verify_suffix(word, cell, rules):
+        cell = clear_cell(cell)
+        if not rules.get(cell, False):
+            return np.nan
+        for pattern, expected in rules[cell]:
+            match = re.search(pattern, str(word))
+            if match:
+                if str(expected) == '0' or str(word).endswith(str(expected)):
+                    return '#NONE#' if expected == '0' else expected
+        return np.nan
+    forms['extracted_exponent'] = forms.apply(
+        lambda row: extract_and_verify_suffix(row['orth_form'], row['cell'], rules_dict), 
+        axis=1
+    )
+    forms.loc[forms['indeclinable'] == True, 'extracted_exponent'] = ''
+    # store indeclensibility information along with lexemes
+    indeclinable_map = forms.groupby('lexeme')['indeclinable'].any()
+    indeclinable_df = indeclinable_map.reset_index()
+    lexis = lexis.merge(indeclinable_df, left_on='lexeme_id', right_on='lexeme', how='left')
+    lexis['indeclinable'] = lexis['indeclinable'].fillna(False)
+    lexis['indeclinable'] = lexis['indeclinable'].astype(bool)
+    del lexis['lexeme']
+    del forms['indeclinable']
+    forms.to_csv(f'{output_folder}/paraczech_forms.csv', index=False)
+    lexis.to_csv(f'{output_folder}/paraczech_lexemes.csv', index=False)
+
+
+def add_inflectional_classes(input_folder, output_folder):
+    lexes = pd.read_csv(f'{input_folder}/paraczech_lexemes.csv')
+    # split dataset into POS
+    nouns = lexes[lexes['POS'] == 'noun']
+    adjectives = lexes[lexes['POS'] == 'adjective']
+    poss_adjectives = lexes[lexes['POS'] == 'possessiveAdjective']
+    verbs = lexes[lexes['POS'] == 'verb']
+    # work on individual POS
+    nouns[['infl_class', 'infl_type']] = nouns.progress_apply(
+        lambda row: give_noun_class(row['label'], mode='combined'),
+        axis=1, result_type='expand'
+    )
+    verbs[['infl_class', 'infl_type']] = verbs.progress_apply(
+        lambda row: give_verb_class(row['label'], mode='combined'),
+        axis=1, result_type='expand'
+    )
+    adjectives[['infl_class', 'infl_type']] = adjectives.progress_apply(
+        lambda row: give_adjective_class(row['label'], mode='combined'),
+        axis=1, result_type='expand'
+    )
+    poss_adjectives[['infl_class', 'infl_type']] = poss_adjectives.progress_apply(
+        lambda row: give_adjective_class(row['label'], mode='combined'),
+        axis=1, result_type='expand'
+    )
+    # merge all POS, store resulting data
+    new_lexes = pd.concat([nouns, verbs, adjectives, poss_adjectives], ignore_index=True)
+    new_lexes['infl_class'] = new_lexes['infl_class'].replace({'#': ''})
+    new_lexes['infl_type'] = new_lexes['infl_type'].replace({'#': ''})
+    new_lexes.to_csv(f'{output_folder}/paraczech_lexemes.csv', index=False)
+
+
+def delete_name_type_tag(input_folder, output_folder):
+    # remove from lexemes.csv
+    lexes = pd.read_csv(f'{input_folder}/paraczech_lexemes.csv')
+    del lexes['name_type_tag']
+    lexes.to_csv(f'{output_folder}/paraczech_lexemes.csv', index=False)
+    # remove from tags.csv
+    tags = pd.read_csv(f'{input_folder}/paraczech_tags.csv')
+    tags = tags[tags['tag_column_name'] != 'name_type_tag']
+    tags = tags[tags['tag_column_name'] != 'origin_tag']
+    tags.to_csv(f'{output_folder}/paraczech_tags.csv', index=False)
+
+
+def sort_tables(input_folder, output_folder):
+    # sort cells.csv
+    cells = pd.read_csv(f'{input_folder}/paraczech_cells.csv')
+    cells = cells.sort_values(by='POS', ignore_index=True)
+    cells.to_csv(f'{output_folder}/paraczech_cells.csv', index=False)
+    # sort features-values.csv
+    featval = pd.read_csv(f'{input_folder}/paraczech_features-values.csv')
+    featval = featval.sort_values(by=['feature', 'canonical_order'], ignore_index=True)
+    featval.to_csv(f'{output_folder}/paraczech_features-values.csv', index=False)
+    # sort lexemes.csv
+    lexes = pd.read_csv(f'{input_folder}/paraczech_lexemes.csv')
+    lexes = lexes.sort_values(by='POS', ignore_index=True)
+    lexes.to_csv(f'{output_folder}/paraczech_lexemes.csv', index=False)
+    # sort sounds.csv
+    sounds = pd.read_csv(f'{input_folder}/paraczech_sounds.csv')
+    sounds = sounds.sort_values(by='sound_id', ignore_index=True)
+    sounds.to_csv(f'{output_folder}/paraczech_sounds.csv', index=False)
