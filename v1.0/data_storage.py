@@ -850,6 +850,7 @@ def sort_tables(input_folder, output_folder):
     # sort features-values.csv
     featval = pd.read_csv(f'{input_folder}/paraczech_features-values.csv')
     featval = featval.sort_values(by=['feature', 'canonical_order'], ignore_index=True)
+    featval['canonical_order'] = featval['canonical_order'].astype('Int64')
     featval.to_csv(f'{output_folder}/paraczech_features-values.csv', index=False)
     # sort lexemes.csv
     lexes = pd.read_csv(f'{input_folder}/paraczech_lexemes.csv')

@@ -37,6 +37,8 @@ parser.add_argument('--limit_distribution_to_all_wordforms_of_lexemes_above_thre
 parser.add_argument('--add_manual_corrections', type=bool, default=False, required=False)
 parser.add_argument('--add_exponents', type=bool, default=False, required=False)
 parser.add_argument('--add_inflectional_classes', type=bool, default=False, required=False)
+parser.add_argument('--delete_name_type_tag', type=bool, default=False, required=False)
+parser.add_argument('--sort_tables', type=bool, default=False, required=False)
 args = parser.parse_args()
 
 
