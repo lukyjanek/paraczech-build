@@ -1,4 +1,5 @@
-v1.0/input-resources/*
+v1.0/input-resources/czech-morfflex-2.0.tsv.xz
+v1.0/input-resources/derinet-2-1.tsv
 v1.0/other-paralexes/*
 v1.0/lists-morfflex/*
 v1.0/extracted-annotation/*
