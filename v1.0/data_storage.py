@@ -842,6 +842,57 @@ def delete_name_type_tag(input_folder, output_folder):
     tags.to_csv(f'{output_folder}/paraczech_tags.csv', index=False)
 
 
+def delete_dual_number(input_folder, output_folder):
+    lexes = pd.read_csv(f'{input_folder}/paraczech_lexemes.csv')
+    forms = pd.read_csv(f'{input_folder}/paraczech_forms.csv')
+    cells = pd.read_csv(f'{input_folder}/paraczech_cells.csv')
+    dual_forms = forms[forms['cell'].str.contains('.du')]
+    dual_lexemes_list = dual_forms.lexeme.unique()
+    dual_lexemes = lexes[lexes.lexeme_id.isin(dual_lexemes_list)]
+    merged_dual_forms_lexes = dual_lexemes.merge(
+        dual_forms[['lexeme', 'frequency']].rename(columns={'frequency': 'freq_forms'}), 
+        left_on='lexeme_id', 
+        right_on='lexeme', 
+        how='left'
+    )
+    lexemes_to_delete = merged_dual_forms_lexes[merged_dual_forms_lexes['freq_forms'] >= merged_dual_forms_lexes['frequency']]['lexeme_id']
+    lexes = lexes[~lexes['lexeme_id'].isin(lexemes_to_delete)]
+    forms = forms[~forms['lexeme'].isin(lexemes_to_delete)]
+    forms = forms[~forms['cell'].str.contains('.du')]
+    cells = cells[~cells['cell_id'].str.contains('du')]
+    cells.to_csv(f'{output_folder}/paraczech_cells.csv', index=False)
+    forms.to_csv(f'{output_folder}/paraczech_forms.csv', index=False)
+    lexes.to_csv(f'{output_folder}/paraczech_lexemes.csv', index=False)
+
+
+def delete_archaic_verbal_cells(input_folder, output_folder):
+    lexes = pd.read_csv(f'{input_folder}/paraczech_lexemes.csv')
+    forms = pd.read_csv(f'{input_folder}/paraczech_forms.csv')
+    cells = pd.read_csv(f'{input_folder}/paraczech_cells.csv')
+    cells_verbs = cells[(cells.POS == 'verb') & (cells.frequency == 0)]
+    cells = cells[~cells.cell_id.isin(cells_verbs.cell_id.unique())]
+    verbs_forms_to_delete = forms[forms.cell.isin(cells_verbs.cell_id.unique())]
+    forms = forms[~forms.cell.isin(cells_verbs.cell_id.unique())]
+    lexes = lexes[~((lexes.lexeme_id.isin(verbs_forms_to_delete.lexeme.unique())) & (lexes.frequency == 0))]
+    cells.to_csv(f'{output_folder}/paraczech_cells.csv', index=False)
+    forms.to_csv(f'{output_folder}/paraczech_forms.csv', index=False)
+    lexes.to_csv(f'{output_folder}/paraczech_lexemes.csv', index=False)
+
+
+def delete_nonatested_adjectival_cells(input_folder, output_folder):
+    lexes = pd.read_csv(f'{input_folder}/paraczech_lexemes.csv')
+    forms = pd.read_csv(f'{input_folder}/paraczech_forms.csv')
+    cells = pd.read_csv(f'{input_folder}/paraczech_cells.csv')
+    cells_adjectives = cells[(cells.POS == 'adjective') & (cells.frequency == 0)]
+    cells = cells[~cells.cell_id.isin(cells_adjectives.cell_id.unique())]
+    adjectives_forms_to_delete = forms[forms.cell.isin(cells_adjectives.cell_id.unique())]
+    forms = forms[~forms.cell.isin(cells_adjectives.cell_id.unique())]
+    lexes = lexes[~((lexes.lexeme_id.isin(adjectives_forms_to_delete.lexeme.unique())) & (lexes.frequency == 0))]
+    cells.to_csv(f'{output_folder}/paraczech_cells.csv', index=False)
+    forms.to_csv(f'{output_folder}/paraczech_forms.csv', index=False)
+    lexes.to_csv(f'{output_folder}/paraczech_lexemes.csv', index=False)
+
+
 def sort_tables(input_folder, output_folder):
     # sort cells.csv
     cells = pd.read_csv(f'{input_folder}/paraczech_cells.csv')

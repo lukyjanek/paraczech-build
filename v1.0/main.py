@@ -11,7 +11,8 @@ from data_storage import store_data, make_distribution, \
                          limit_distribution_to_lexemes_with_all_cells, \
                          limit_distribution_to_all_wordforms_of_lexemes_above_threshold, \
                          add_manual_corrections, add_exponents, add_inflectional_classes, \
-                         delete_name_type_tag, sort_tables
+                         delete_name_type_tag, delete_dual_number, delete_archaic_verbal_cells, \
+                         delete_nonatested_adjectival_cells, sort_tables
 from data_analysis import simple_statistics, simple_statistics_above_distributions
 from collections import defaultdict
 from itertools import islice
@@ -38,6 +39,9 @@ parser.add_argument('--add_manual_corrections', type=bool, default=False, requir
 parser.add_argument('--add_exponents', type=bool, default=False, required=False)
 parser.add_argument('--add_inflectional_classes', type=bool, default=False, required=False)
 parser.add_argument('--delete_name_type_tag', type=bool, default=False, required=False)
+parser.add_argument('--delete_dual_number', type=bool, default=False, required=False)
+parser.add_argument('--delete_archaic_verbal_cells', type=bool, default=False, required=False)
+parser.add_argument('--delete_nonatested_adjectival_cells', type=bool, default=False, required=False)
 parser.add_argument('--sort_tables', type=bool, default=False, required=False)
 args = parser.parse_args()
 
@@ -59,7 +63,7 @@ def main():
             output_path='extracted-annotation/frequency-list-from-syn.tsv'
         )
 
-    # ## TODO: paralelism - extracting frequencies of wordforms in SYN v9 in bunches
+    # ## paralelism - extracting frequencies of wordforms in SYN v9 in bunches
     # if args.full_pipeline or args.extract_frequencies_from_syn:
     #     n_lines = 50
     #     with open('extracted-annotation/from-morfflex.tsv', mode='r', encoding='U8') as input_file, \
@@ -191,6 +195,27 @@ def main():
             output_folder = 'final-paraczech-package/paraczech/'
         )
     
+    ## delete dual_number
+    if args.delete_dual_number:
+        delete_dual_number(
+            input_folder = 'final-paraczech-package/paraczech/',
+            output_folder = 'final-paraczech-package/paraczech/'
+        )
+
+    ## delete archaic_verbal_cells
+    if args.delete_archaic_verbal_cells:
+        delete_archaic_verbal_cells(
+            input_folder = 'final-paraczech-package/paraczech/',
+            output_folder = 'final-paraczech-package/paraczech/'
+        )
+
+    ## delete nonatested_adjectival_cells
+    if args.delete_nonatested_adjectival_cells:
+        delete_nonatested_adjectival_cells(
+            input_folder = 'final-paraczech-package/paraczech/',
+            output_folder = 'final-paraczech-package/paraczech/'
+        )
+
     ## sort individual tables logically
     if args.sort_tables:
         sort_tables(

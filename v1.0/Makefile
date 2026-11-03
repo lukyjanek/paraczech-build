@@ -13,6 +13,9 @@ version_1.0:
 		--add_exponents==True \
 		--add_inflectional_classes==True \
 		--delete_name_type_tag==True \
+		--delete_dual_number==True \
+		--delete_archaic_verbal_cells==True \
+		--delete_nonatested_adjectival_cells==True \
 		--sort_tables==True
 
 validation:
