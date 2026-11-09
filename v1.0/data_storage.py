@@ -893,6 +893,16 @@ def delete_nonatested_adjectival_cells(input_folder, output_folder):
     lexes.to_csv(f'{output_folder}/paraczech_lexemes.csv', index=False)
 
 
+def delete_nonatested_lexemes(input_folder, output_folder):
+    lexes = pd.read_csv(f'{input_folder}/paraczech_lexemes.csv')
+    forms = pd.read_csv(f'{input_folder}/paraczech_forms.csv')
+    lexemes_to_delete = lexes[lexes.frequency == 0]
+    forms = forms[~forms.lexeme.isin(lexemes_to_delete.lexeme_id.unique())]
+    lexes = lexes[lexes.frequency > 0]
+    forms.to_csv(f'{output_folder}/paraczech_forms.csv', index=False)
+    lexes.to_csv(f'{output_folder}/paraczech_lexemes.csv', index=False)
+
+
 def sort_tables(input_folder, output_folder):
     # sort cells.csv
     cells = pd.read_csv(f'{input_folder}/paraczech_cells.csv')

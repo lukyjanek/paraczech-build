@@ -15,7 +15,7 @@ version_1.0:
 		--delete_name_type_tag==True \
 		--delete_dual_number==True \
 		--delete_archaic_verbal_cells==True \
-		--delete_nonatested_adjectival_cells==True \
+		--delete_nonatested_lexemes==True \
 		--sort_tables==True
 
 validation:

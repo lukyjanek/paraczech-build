@@ -12,7 +12,7 @@ from data_storage import store_data, make_distribution, \
                          limit_distribution_to_all_wordforms_of_lexemes_above_threshold, \
                          add_manual_corrections, add_exponents, add_inflectional_classes, \
                          delete_name_type_tag, delete_dual_number, delete_archaic_verbal_cells, \
-                         delete_nonatested_adjectival_cells, sort_tables
+                         delete_nonatested_adjectival_cells, delete_nonatested_lexemes, sort_tables
 from data_analysis import simple_statistics, simple_statistics_above_distributions
 from collections import defaultdict
 from itertools import islice
@@ -42,6 +42,7 @@ parser.add_argument('--delete_name_type_tag', type=bool, default=False, required
 parser.add_argument('--delete_dual_number', type=bool, default=False, required=False)
 parser.add_argument('--delete_archaic_verbal_cells', type=bool, default=False, required=False)
 parser.add_argument('--delete_nonatested_adjectival_cells', type=bool, default=False, required=False)
+parser.add_argument('--delete_nonatested_lexemes', type=bool, default=False, required=False)
 parser.add_argument('--sort_tables', type=bool, default=False, required=False)
 args = parser.parse_args()
 
@@ -212,6 +213,13 @@ def main():
     ## delete nonatested_adjectival_cells
     if args.delete_nonatested_adjectival_cells:
         delete_nonatested_adjectival_cells(
+            input_folder = 'final-paraczech-package/paraczech/',
+            output_folder = 'final-paraczech-package/paraczech/'
+        )
+
+    ## delete nonatested_lexemes
+    if args.delete_nonatested_lexemes:
+        delete_nonatested_lexemes(
             input_folder = 'final-paraczech-package/paraczech/',
             output_folder = 'final-paraczech-package/paraczech/'
         )
