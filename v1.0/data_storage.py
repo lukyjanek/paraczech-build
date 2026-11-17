@@ -903,6 +903,39 @@ def delete_nonatested_lexemes(input_folder, output_folder):
     lexes.to_csv(f'{output_folder}/paraczech_lexemes.csv', index=False)
 
 
+def label_adj_positive_grade(input_folder, output_folder):
+    def insert_pstg(cell_string):
+        parts = cell_string.split('.')
+        if len(parts) > 1:
+            parts.insert(-1, 'pstg')
+            return '.'.join(parts)
+    forms = pd.read_csv(f'{input_folder}/paraczech_forms.csv')
+    mask_to_change = (
+        (forms['UCNK'].str.startswith('AA')) & 
+        (~forms['cell'].str.contains('pstg|cmpg|sprg', regex=True))
+    )
+    forms.loc[mask_to_change, 'cell'] = forms.loc[mask_to_change, 'cell'].apply(insert_pstg)
+    forms.to_csv(f'{output_folder}/paraczech_forms.csv', index=False)
+    cells = pd.read_csv(f'{input_folder}/paraczech_cells.csv')
+    mask_cells = (
+        (cells['POS'] == 'adjective') & 
+        (~cells['cell_id'].str.contains('pstg|cmpg|sprg', regex=True))
+    )
+    cells.loc[mask_cells, 'cell_id'] = cells.loc[mask_cells, 'cell_id'].apply(insert_pstg)
+    cells = cells.groupby(['cell_id', 'POS'], as_index=False).agg({
+        'frequency': 'sum',
+        'ud': 'first',
+        'unimorph': 'first'
+    })
+    cells.to_csv(f'{output_folder}/paraczech_cells.csv', index=False)
+
+
+def change_form_ids(input_folder, output_folder):
+    forms = pd.read_csv(f'{input_folder}/paraczech_forms.csv')
+    forms['form_id'] = [f'f{i}' for i in range(1, len(forms) + 1)]
+    forms.to_csv(f'{output_folder}/paraczech_forms.csv', index=False)
+
+
 def sort_tables(input_folder, output_folder):
     # sort cells.csv
     cells = pd.read_csv(f'{input_folder}/paraczech_cells.csv')

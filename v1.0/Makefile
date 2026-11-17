@@ -16,6 +16,8 @@ version_1.0:
 		--delete_dual_number==True \
 		--delete_archaic_verbal_cells==True \
 		--delete_nonatested_lexemes==True \
+		--label_adj_positive_grade==True \
+		--change_form_ids==True \
 		--sort_tables==True
 
 validation:
