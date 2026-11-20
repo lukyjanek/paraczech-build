@@ -1,0 +1,16 @@
+tag_id,tag_column_name,comment
+equal,overabundance_tag,overabundant form relatively equal to other relevant forms
+archaic,overabundance_tag,overabundant but archaic form (less frequented)
+informal,overabundance_tag,"overabundant form used in a spoken language, informal usage"
+historic,register_tag,"archaic word, not contemporary, used in history"
+expressive,register_tag,expressive word
+vulgar,register_tag,vulgar word
+nonstandard,register_tag,non-standard word
+typo,epistemic_tag,"distortion, typo"
+standard,variant_tag,"standard word, basic form of a word, commonly used, bookish"
+dialect,variant_tag,dialect
+slang,variant_tag,"slang, argot"
+proper,name_type_tag,proper noun/adjective/verb
+common,name_type_tag,proper noun/adjective/verb
+borrowed,origin_tag,word adopted from other languages
+native,origin_tag,word belonging to the native lexicon

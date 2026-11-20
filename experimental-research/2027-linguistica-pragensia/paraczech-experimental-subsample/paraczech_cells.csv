@@ -1,0 +1,15 @@
+cell_id,POS,ud,unimorph,frequency
+nom.sg,noun,Case=Nom|Number=Sing,NOM;SG,226108369
+gen.sg,noun,Case=Gen|Number=Sing,GEN;SG,222426577
+dat.sg,noun,Case=Dat|Number=Sing,DAT;SG,30986125
+acc.sg,noun,Case=Acc|Number=Sing,ACC;SG,192264357
+loc.sg,noun,Case=Loc|Number=Sing,LOC;SG,131568477
+ins.sg,noun,Case=Ins|Number=Sing,INS;SG,72464084
+ins.pl,noun,Case=Ins|Number=Plur,INS;PL,19143745
+nom.pl,noun,Case=Nom|Number=Plur,NOM;PL,79735329
+gen.pl,noun,Case=Gen|Number=Plur,GEN;PL,119059642
+acc.pl,noun,Case=Acc|Number=Plur,ACC;PL,69390890
+voc.pl,noun,Case=Voc|Number=Plur,VOC;PL,213457
+loc.pl,noun,Case=Loc|Number=Plur,LOC;PL,23639141
+voc.sg,noun,Case=Voc|Number=Sing,VOC;SG,538049
+dat.pl,noun,Case=Dat|Number=Plur,DAT;PL,12172825

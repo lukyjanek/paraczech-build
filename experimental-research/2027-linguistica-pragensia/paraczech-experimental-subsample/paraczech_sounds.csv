@@ -1,0 +1,46 @@
+sound_id,label,syllabic,long,consonantal,sonorant,continuant,delayed release,approximant,trill,nasal,voice,labial,round,labiodental,coronal,anterior,strident,lateral,dorsal,mid,high,low,front,back
+ɛː,long open-mid front unrounded vowel,1,1,0,1,1,0,1,0,0,1,0,0,0,0,0,0,0,1,1,0,0,1,0
+m,bilabial nasal,0,0,1,1,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+l,alveolar lateral approximant,0,0,1,1,1,0,1,0,0,1,0,0,0,1,1,0,1,0,0,0,0,0,0
+f,voiceless labiodental fricative,0,0,1,0,1,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0
+ɟ,voiced palatal plosive,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0
+x,voiceless velar fricative,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1
+ɡ,voiced velar plosive,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1
+ŋ,velar nasal,0,0,1,1,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,1
+k,voiceless velar plosive,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1
+ɔ,open-mid back rounded vowel,1,0,0,1,1,0,1,0,0,1,1,1,0,0,0,0,0,1,1,0,0,0,1
+r̝̊,voiceless raised alveolar trill,0,0,1,0,1,0,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0
+j,palatal approximant,0,0,0,1,1,0,1,0,0,1,0,0,0,0,0,0,0,1,0,1,0,1,0
+ɔu̯,diphthong o-u,0,0,0,1,1,0,1,0,0,1,1,1,0,0,0,0,0,1,1,0,0,0,1
+ɛ,open-mid front unrounded vowel,1,0,0,1,1,0,1,0,0,1,0,0,0,0,0,0,0,1,1,0,0,1,0
+iː,long close front unrounded vowel,1,1,0,1,1,0,1,0,0,1,0,0,0,0,0,0,0,1,0,1,0,1,0
+s,voiceless alveolar sibilant,0,0,1,0,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0
+d͡z,voiced alveolar affricate,0,0,1,0,0,1,0,0,0,1,0,0,0,1,1,1,0,0,0,0,0,0,0
+r̝,voiced raised alveolar trill,0,0,1,0,1,0,1,1,0,1,0,0,0,1,1,1,0,0,0,0,0,0,0
+u,close back rounded vowel,1,0,0,1,1,0,1,0,0,1,1,1,0,0,0,0,0,1,0,1,0,0,1
+t͡ʃ,voiceless postalveolar affricate,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0
+d,voiced alveolar plosive,0,0,1,0,0,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0
+ʃ,voiceless postalveolar sibilant,0,0,1,0,1,1,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0
+r,alveolar trill,0,0,1,1,1,0,1,1,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0
+ɲ,palatal nasal,0,0,1,1,0,0,0,0,1,1,0,0,0,1,0,0,0,1,0,0,0,1,0
+ʒ,voiced postalveolar sibilant,0,0,1,0,1,1,0,0,0,1,0,0,0,1,0,1,1,0,0,0,0,0,0
+p,voiceless bilabial plosive,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+a,open central unrounded vowel,1,0,0,1,1,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0
+ɦ,voiced glottal fricative,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+ɪ,near-close near-front unrounded vowel,1,0,0,1,1,0,1,0,0,1,0,0,0,0,0,0,0,1,0,1,0,1,0
+ɔː,long open-mid back rounded vowel,1,1,0,1,1,0,1,0,0,1,1,1,0,0,0,0,0,1,1,0,0,0,1
+v,voiced labiodental fricative,0,0,1,0,1,1,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0
+au̯,diphthong a-u,0,0,0,1,1,0,1,0,0,1,1,1,0,0,0,0,0,1,0,0,1,0,1
+t,voiceless alveolar plosive,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0
+d͡ʒ,voiced postalveolar affricate,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0
+z,voiced alveolar sibilant,0,0,1,0,1,1,0,0,0,1,0,0,0,1,1,1,0,0,0,0,0,0,0
+aː,long open central unrounded vowel,1,1,0,1,1,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0
+c,voiceless palatal plosive,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0
+n,alveolar nasal,0,0,1,1,0,0,0,0,1,1,0,0,0,1,1,0,0,0,0,0,0,0,0
+b,voiced bilabial plosive,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+uː,long close back rounded vowel,1,1,0,1,1,0,1,0,0,1,1,1,0,0,0,0,0,1,0,1,0,0,1
+t͡s,voiceless alveolar affricate,0,0,1,0,0,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0
+ɛu̯,diphthong e-u,0,0,0,1,1,0,1,0,0,1,1,1,0,0,0,0,0,1,1,0,0,1,1
+ʔ,glottal stop,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+ɱ,labiodental nasal,0,0,1,1,0,0,0,0,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0
+ɣ,voiced velar fricative,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1
