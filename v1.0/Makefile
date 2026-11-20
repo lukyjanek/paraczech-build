@@ -22,7 +22,7 @@ version_1.0:
 
 validation:
 	cp final-paraczech-package/build/paraczech.yml final-paraczech-package/
-	paralex meta final-paraczech-package/paraczech.yml
+	paralex meta final-paraczech-package/paraczech.yml --basepath final-paraczech-package
 	frictionless validate final-paraczech-package/paraczech.package.json
 	paralex validate final-paraczech-package/paraczech.package.json
 	rm final-paraczech-package/paraczech.yml

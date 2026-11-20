@@ -552,15 +552,15 @@ def make_distribution(input_file, output_folder):
     }
 
     feature_pos = {
-        'm': 'noun,adjective,verb', 'f': 'noun,adjective,verb', 'n': 'noun,adjective,verb', 
-        'anim': 'noun', 'inan': 'noun', 'pl': 'noun,adjective,verb', 'sg': 'noun,adjective,verb', 
-        'du' : 'noun,adjective,verb', 'nom': 'noun,adjective', 'gen': 'noun,adjective',
-        'dat': 'noun,adjective', 'acc': 'noun,adjective', 'voc': 'noun,adjective',
-        'loc': 'noun,adjective', 'ins': 'noun,adjective', 'poss': 'adjective',
+        'm': 'noun;adjective;verb', 'f': 'noun;adjective;verb', 'n': 'noun;adjective;verb', 
+        'anim': 'noun', 'inan': 'noun', 'pl': 'noun;adjective;verb', 'sg': 'noun;adjective;verb', 
+        'du' : 'noun;adjective;verb', 'nom': 'noun;adjective', 'gen': 'noun;adjective',
+        'dat': 'noun;adjective', 'acc': 'noun;adjective', 'voc': 'noun;adjective',
+        'loc': 'noun;adjective', 'ins': 'noun;adjective', 'poss': 'adjective',
         'psor:m': 'adjective', 'psor:f': 'adjective',
         'psor:sg': 'adjective', 'psor:pl': 'adjective',
-        'pstg': 'adjective', 'cmpg': 'adjective', 'sprg': 'adjective', 'posp': 'noun,adjective,verb',
-        'negp': 'noun,adjective,verb', 'inf': 'verb', 'imp': 'verb', '1': 'verb', '2': 'verb',
+        'pstg': 'adjective', 'cmpg': 'adjective', 'sprg': 'adjective', 'posp': 'noun;adjective;verb',
+        'negp': 'noun;adjective;verb', 'inf': 'verb', 'imp': 'verb', '1': 'verb', '2': 'verb',
         '3': 'verb', 'prs': 'verb', 'pst': 'verb', 'fut': 'verb', 'actv': 'verb', 'pass': 'verb',
         'prf': 'verb', 'ipfv': 'verb', 'biasp': 'verb', 'cond': 'verb', 'deverb:prstgr': 'adjective',
         'deverb:psttgr': 'adjective'
@@ -577,7 +577,7 @@ def make_distribution(input_file, output_folder):
 
     skip_features = [  # they are stored with lexemes, not forms
         'psor:f', 'biasp', 'poss', 'deverb:psttgr', 'ipfv',
-        'psor:m', 'deverb:prstgr', 'prf'
+        'psor:m', 'deverb:prstgr', 'prf', 'du'
     ]
     features = set()
     for items in all_in_one:
@@ -896,9 +896,8 @@ def delete_nonatested_adjectival_cells(input_folder, output_folder):
 def delete_nonatested_lexemes(input_folder, output_folder):
     lexes = pd.read_csv(f'{input_folder}/paraczech_lexemes.csv')
     forms = pd.read_csv(f'{input_folder}/paraczech_forms.csv')
-    lexemes_to_delete = lexes[lexes.frequency == 0]
-    forms = forms[~forms.lexeme.isin(lexemes_to_delete.lexeme_id.unique())]
-    lexes = lexes[lexes.frequency > 0]
+    lexes = lexes[lexes['frequency'] > 0]
+    forms = forms[forms['lexeme'].isin(lexes['lexeme_id'])]
     forms.to_csv(f'{output_folder}/paraczech_forms.csv', index=False)
     lexes.to_csv(f'{output_folder}/paraczech_lexemes.csv', index=False)
 
@@ -911,7 +910,8 @@ def label_adj_positive_grade(input_folder, output_folder):
             return '.'.join(parts)
     forms = pd.read_csv(f'{input_folder}/paraczech_forms.csv')
     mask_to_change = (
-        (forms['UCNK'].str.startswith('AA')) & 
+        (forms['UCNK'].str.startswith('A')) & 
+        (~forms['UCNK'].str.startswith('AU')) & 
         (~forms['cell'].str.contains('pstg|cmpg|sprg', regex=True))
     )
     forms.loc[mask_to_change, 'cell'] = forms.loc[mask_to_change, 'cell'].apply(insert_pstg)
