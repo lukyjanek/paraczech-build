@@ -1,6 +1,6 @@
 # ParaCzech: Lexicon of Czech Paradigms
 
-Citation (if available): Lukáš Kyjánek & Olivier Bonami. ParaCzech Lexicon of Czech Paradigms [Data set]. Zenodo. DOI: 10.5281/zenodo.18262654
+Citation: Kyjánek, L., & Bonami, O. (2026). ParaCzech v1.0: Lexicon of Czech Paradigms (Version v1.0) [Dataset]. Zenodo. https://doi.org/10.5281/zenodo.18262654
 
 Data set developer(s): Lukáš Kyjánek, Olivier Bonami
 
